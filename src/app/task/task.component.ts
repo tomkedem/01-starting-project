@@ -10,4 +10,8 @@ import { Component, Input } from '@angular/core';
 export class AppTaskComponent {
   @Input({required: true}) name?: string;
 
+  onAddTask() {
+    console.log('Task added');
+  }
+
 }
