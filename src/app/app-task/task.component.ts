@@ -1,11 +1,11 @@
 import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-app-task',
+  selector: 'app-task',
   standalone: true,
   imports: [],
-  templateUrl: './app-task.component.html',
-  styleUrl: './app-task.component.css'
+  templateUrl: './task.component.html',
+  styleUrl: './task.component.css'
 })
 export class AppTaskComponent {
   @Input({required: true}) name?: string;
