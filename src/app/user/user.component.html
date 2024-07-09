@@ -1,9 +1,9 @@
 <div>
     <button (click)="onSelectedUser()">
         <img 
-            [src]="imagePhat" 
-            [alt] = "name"
+            [src]="imagePhat()" 
+            [alt] = "name()"
         />
-        <span>{{name}}</span> 
+        <span>{{name()}}</span> 
     </button>
 </div>
