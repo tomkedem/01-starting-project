@@ -1,10 +1,5 @@
 import { Component, computed, Input, input , output} from '@angular/core';
-
-interface User {
-  id:  string;
-  name: string;
-  avatar: string;
-}
+import { IUser } from '../Interfaces/IUser';
 
 @Component({
   selector: 'app-user',
@@ -16,7 +11,7 @@ interface User {
 export class UserComponent {  
   
   select = output<string>();  
-  user = input.required<User>();  
+  user = input.required<IUser>();  
 
   imagePhat = computed(() => `assets/users/${this.user().avatar}`);
  
